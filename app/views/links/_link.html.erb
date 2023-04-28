@@ -1,11 +1,11 @@
 <div id="<%= dom_id link %>" class="link">
-  <a href="<%= link.url %>">
+  <%= link_to link.url do %>
     <h2><%= link.title %></h2>
     <p><%= link.url %></p>
-  </a>
+  <% end %>
 
   <div class="posted-by">
-    <small>Posted by: <%= link.user.username %></small>
+    submitted by: <%= link.user.username %>
   </div>
 
   <div class="description">

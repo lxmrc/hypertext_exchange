@@ -13,3 +13,20 @@
 .description {
   margin: 1em 0;
 }
+
+.button {
+  background: none;
+  border: none;
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.button_to {
+  display: inline;
+}
+
+body {
+  max-width: 45vw;
+  margin: 0 auto;
+}

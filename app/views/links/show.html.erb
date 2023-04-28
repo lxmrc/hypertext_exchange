@@ -1,9 +1,12 @@
 <p style="color: green"><%= notice %></p>
 
+<%= link_to "links", links_path %>
+
+<hr/>
+
 <%= render @link %>
 
 <div>
-  <%= link_to "Edit", edit_link_path(@link) %> |
-  <%= button_to "Delete", @link, method: :delete %> |
-  <%= link_to "Back to links", links_path %>
+  <%= link_to "edit", edit_link_path(@link) %> |
+  <%= button_to "delete", @link, method: :delete, class: "button" %>
 </div>
