@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
-  resources :links
+  get "about", to: "static_pages#about"
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :links
+  root "links#index"
 end
