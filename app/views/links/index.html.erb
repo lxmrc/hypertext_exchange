@@ -2,10 +2,11 @@
 
 <%= link_to "submit", new_link_path %>
 
-<hr/><br/>
+<br/><br/><hr/>
 
 <div id="links">
   <% @links.each do |link| %>
+    <br/>
     <%= render link %>
     <p>
       <%= link_to "view", link %>
