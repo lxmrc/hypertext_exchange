@@ -29,4 +29,6 @@
 body {
   max-width: 45vw;
   margin: 0 auto;
+  font-family: monospace;
+  font-size: 16px;
 }
