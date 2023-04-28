@@ -71,9 +71,6 @@ GEM
     concurrent-ruby (1.2.2)
     crass (1.0.6)
     date (3.3.3)
-    debug (1.7.2)
-      irb (>= 1.5.0)
-      reline (>= 0.3.1)
     devise (4.9.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -81,13 +78,12 @@ GEM
       responders
       warden (~> 1.2.3)
     erubi (1.12.0)
+    friendly_id (5.4.2)
+      activerecord (>= 4.0.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
     i18n (1.13.0)
       concurrent-ruby (~> 1.0)
-    io-console (0.6.0)
-    irb (1.6.4)
-      reline (>= 0.3.0)
     loofah (2.20.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -147,8 +143,6 @@ GEM
       thor (~> 1.0)
       zeitwerk (~> 2.5)
     rake (13.0.6)
-    reline (0.3.3)
-      io-console (~> 0.5)
     responders (3.1.0)
       actionpack (>= 5.2)
       railties (>= 5.2)
@@ -174,13 +168,12 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  debug
   devise (~> 4.9)
+  friendly_id (~> 5.4.0)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   sprockets-rails
-  tzinfo-data
 
 RUBY VERSION
    ruby 3.0.0p0
