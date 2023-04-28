@@ -1,22 +1,14 @@
-<div id="<%= dom_id link %>">
-  <p>
-    <strong>Title:</strong>
-    <%= link.title %>
-  </p>
+<div id="<%= dom_id link %>" class="link">
+  <a href="<%= link.url %>">
+    <h2><%= link.title %></h2>
+    <p><%= link.url %></p>
+  </a>
 
-  <p>
-    <strong>Url:</strong>
-    <%= link.url %>
-  </p>
+  <div class="posted-by">
+    <small>Posted by: <%= link.user.username %></small>
+  </div>
 
-  <p>
-    <strong>Description:</strong>
+  <div class="description">
     <%= link.description %>
-  </p>
-
-  <p>
-    <strong>User:</strong>
-    <%= link.user_id %>
-  </p>
-
+  </div>
 </div>
