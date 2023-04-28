@@ -29,6 +29,10 @@
 body {
   max-width: 45vw;
   margin: 0 auto;
-  font-family: monospace;
-  font-size: 16px;
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+}
+
+a {
+  color: #333;
 }
