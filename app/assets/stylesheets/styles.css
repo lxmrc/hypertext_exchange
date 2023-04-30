@@ -17,7 +17,7 @@
 .button {
   background: none;
   border: none;
-  color: blue;
+  color: #333;
   text-decoration: underline;
   cursor: pointer;
 }
@@ -29,10 +29,22 @@
 body {
   max-width: 45vw;
   margin: 0 auto;
-  font-family: 'Merriweather', serif;
+  font-family: 'Roboto Mono', monospace;
   font-size: 15px;
 }
 
 a {
   color: #333;
+}
+
+nav {
+  margin: 1em auto;
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
+}
+
+.link-card {
+  margin: 1em auto;
+  border-bottom: 1px solid black;
+  padding-bottom: 1em;
 }
