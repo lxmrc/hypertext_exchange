@@ -1,7 +1,7 @@
 <div class="comment" id="<%= dom_id comment %>">
-  <a href="#" class="username"><%= comment.user.username %></a> wrote:
+  <a href="#" class="username"><%= comment.user.username %></a>:
   <p><%= comment.text %></p>
-  <p><small><%= comment.created_at.strftime('%B %d, %Y at %I:%M %p') %></small></p>
+  <span class="comment-date"><%= comment.created_at.strftime('%B %d, %Y at %I:%M %p') %></span>
   <% if comment.user == current_user || @link.user == current_user %>
     <%= button_to "delete", comment, method: :delete, class: "button" %>
   <% end %>

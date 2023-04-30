@@ -1,5 +1,11 @@
 <p style="color: green"><%= notice %></p>
 
+<div class="link-details">
+  Submitted by <a href="#" class="username"><%= @link.user.username %></a> on <%= @link.created_at.strftime('%B %d, %Y at %I:%M %p') %>
+</div>
+
+<br/>
+
 <%= render @link %>
 
 <div class="link-controls">
@@ -9,11 +15,11 @@
   <% end %>
 </div>
 
-<div class="comment-form">
-  <% if signed_in? %>
-    <%= render "comments/form", comment: @comment %>
-  <% end %>
-</div>
+<% if signed_in? %>
+  <div class="comment-form">
+      <%= render "comments/form", comment: @comment %>
+  </div>
+<% end %>
 
 <div class="comments">
   <% @link.comments.order(created_at: :desc).each do |comment| %>
