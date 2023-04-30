@@ -82,5 +82,5 @@ test:
 production:
   <<: *default
   database: hypertext_exchange_production
-  username: hypertext_exchange
+  username: deploy
   password: <%= ENV["DATABASE_PASSWORD"] %>
