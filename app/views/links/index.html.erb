@@ -7,7 +7,7 @@
     <div class="link-card">
       <%= render link %>
       <div>
-        <%= link_to "view thread", link %>
+        <%= link_to "view thread (#{link.comments.count})", link %>
         <% if link.user == current_user %>
           &middot; <%= link_to "edit", edit_link_path(link) %>
           &middot; <%= button_to "delete", link, method: :delete, class: "button" %>
