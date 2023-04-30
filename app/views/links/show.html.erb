@@ -2,9 +2,23 @@
 
 <%= render @link %>
 
-<div>
+<div class="link-controls">
   <% if @link.user == current_user %>
     <%= link_to "edit", edit_link_path(@link) %> &middot;
     <%= button_to "delete", @link, method: :delete, class: "button" %>
+  <% end %>
+</div>
+
+<div class="comment-form">
+  <% if signed_in? %>
+    <%= render "comments/form", comment: @comment %>
+  <% end %>
+</div>
+
+<div class="comments">
+  <% @link.comments.order(created_at: :desc).each do |comment| %>
+    <% if comment.persisted? %>
+      <%= render comment %>
+    <% end %>
   <% end %>
 </div>

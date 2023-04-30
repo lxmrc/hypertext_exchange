@@ -7,6 +7,7 @@ class LinksController < ApplicationController
   end
 
   def show
+    @comment = @link.comments.new
   end
 
   def new

@@ -20,6 +20,7 @@
   color: #333;
   text-decoration: underline;
   cursor: pointer;
+  padding: 0;
 }
 
 .button_to {
@@ -39,12 +40,36 @@ a {
 
 nav {
   margin: 1em auto;
-  border-bottom: 1px solid black;
+  border-bottom: 1px dotted black;
   padding-bottom: 1em;
 }
 
 .link-card {
   margin: 1em auto;
-  border-bottom: 1px solid black;
+  border-bottom: 1px dotted black;
+  padding-bottom: 1em;
+}
+
+.link-controls {
+  margin: 1em auto;
+  border-bottom: 1px dotted black;
+  padding-bottom: 1em;
+}
+
+.comment-button {
+  padding: 1em;
+  width: 100%;
+  margin-top: 1em;
+}
+
+.comment-form {
+  margin: 1em auto;
+  border-bottom: 1px dotted black;
+  padding-bottom: 1em;
+}
+
+.comment {
+  margin: 1em auto;
+  border-bottom: 1px dotted black;
   padding-bottom: 1em;
 }
