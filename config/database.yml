@@ -83,4 +83,4 @@ production:
   <<: *default
   database: hypertext_exchange_production
   username: hypertext_exchange
-  password: <%= ENV["HYPERTEXT_EXCHANGE_DATABASE_PASSWORD"] %>
+  password: <%= ENV["DATABASE_PASSWORD"] %>
