@@ -88,3 +88,10 @@ p {
 .username {
   font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+  body {
+    max-width: none;
+    margin: 1em;
+  }
+}
