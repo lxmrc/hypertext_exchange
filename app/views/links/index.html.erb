@@ -3,7 +3,7 @@
 <% end %>
 
 <div id="links">
-  <% @links.each do |link| %>
+  <% @links.order(created_at: :desc).each do |link| %>
     <div class="link-card">
       <%= render link %>
       <div>
