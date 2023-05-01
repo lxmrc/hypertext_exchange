@@ -1,7 +1,7 @@
 <div class="comment" id="<%= dom_id comment %>">
   <%= link_to comment.user.username, user_path(comment.user), class: "username" %></a>:
   <p><%= comment.text %></p>
-  <span class="comment-date"><%= comment.created_at.strftime('%B %d, %Y at %I:%M %p') %></span>
+  <span class="comment-date"><%= comment.created_at.in_time_zone.strftime('%B %d, %Y at %I:%M %p') %></span>
   <% if comment.user == current_user || @link.user == current_user %>
     <%= button_to "delete", comment, method: :delete, class: "button" %>
   <% end %>
