@@ -1,0 +1,4 @@
+<h1><%= @user.username %></h1>
+<p>Member since: <%= @user.created_at.strftime('%B %d, %Y') %></p>
+<p>Links: <%= @user.links.count %></p>
+<p>Comments: <%= @user.comments.count %></p>

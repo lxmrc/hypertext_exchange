@@ -1,5 +1,5 @@
 <div class="comment" id="<%= dom_id comment %>">
-  <a href="#" class="username"><%= comment.user.username %></a>:
+  <%= link_to comment.user.username, user_path(comment.user), class: "username" %></a>:
   <p><%= comment.text %></p>
   <span class="comment-date"><%= comment.created_at.strftime('%B %d, %Y at %I:%M %p') %></span>
   <% if comment.user == current_user || @link.user == current_user %>

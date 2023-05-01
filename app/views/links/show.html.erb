@@ -1,7 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="link-details">
-  Submitted by <a href="#" class="username"><%= @link.user.username %></a> on <%= @link.created_at.strftime('%B %d, %Y at %I:%M %p') %>
+  Submitted by <%= link_to @link.user.username, user_path(@link.user), class: "username" %></a> on <%= @link.created_at.in_time_zone.strftime('%B %d, %Y at %I:%M %p') %>
 </div>
 
 <br/>
